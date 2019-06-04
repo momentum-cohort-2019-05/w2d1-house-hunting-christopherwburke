@@ -21,9 +21,9 @@ down_payment = portion_down_payment * cost_of_home
 
 monthly_savings = (annual_salary / 12) * savings_rate
 
-months = 0
+n = 0
 
-while (current_savings < down_payment):
-    current_savings = current_savings + ((current_savings + monthly_savings)*r)
-    months=months+1
-    print(months)
+while current_savings < down_payment:
+    n = n+1
+    current_savings = current_savings + monthly_savings + ((current_savings + monthly_savings)*r)
+print(n)
